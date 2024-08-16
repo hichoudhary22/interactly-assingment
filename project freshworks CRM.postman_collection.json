@@ -35,7 +35,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "response 200 success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"contact_id\": \"402088746040\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/getContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getContact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2547"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9f3-Wy+UQ4eYbxh7CZtocWJKjfd1GJ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Aug 2024 16:22:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"contact\": {\n        \"id\": 402088746040,\n        \"first_name\": \"himasn\",\n        \"last_name\": \"Sampleton (sample)\",\n        \"display_name\": \"himasn Sampleton (sample)\",\n        \"avatar\": null,\n        \"job_title\": null,\n        \"city\": null,\n        \"state\": null,\n        \"zipcode\": null,\n        \"country\": null,\n        \"email\": \"text@gmail.com\",\n        \"emails\": [\n            {\n                \"id\": 402062474503,\n                \"value\": \"text@gmail.com\",\n                \"is_primary\": true,\n                \"label\": null,\n                \"_destroy\": false\n            }\n        ],\n        \"time_zone\": null,\n        \"work_number\": null,\n        \"mobile_number\": \"19265559503\",\n        \"address\": null,\n        \"last_seen\": null,\n        \"lead_score\": 0,\n        \"last_contacted\": null,\n        \"open_deals_amount\": null,\n        \"won_deals_amount\": null,\n        \"links\": {\n            \"conversations\": \"/crm/sales/contacts/402088746040/conversations/all?include=email_conversation_recipients%2Ctargetable%2Cphone_number%2Cphone_caller%2Cnote%2Cuser&per_page=3\",\n            \"timeline_feeds\": \"/crm/sales/contacts/402088746040/timeline_feeds\",\n            \"document_associations\": \"/crm/sales/contacts/402088746040/document_associations\",\n            \"notes\": \"/crm/sales/contacts/402088746040/notes?include=creater\",\n            \"tasks\": \"/crm/sales/contacts/402088746040/tasks?include=creater,owner,updater,targetable,users,task_type\",\n            \"appointments\": \"/crm/sales/contacts/402088746040/appointments?include=creater,owner,updater,targetable,appointment_attendees,conference,note\",\n            \"reminders\": \"/crm/sales/contacts/402088746040/reminders?include=creater,owner,updater,targetable\",\n            \"duplicates\": \"/crm/sales/contacts/402088746040/duplicates\",\n            \"connections\": \"/crm/sales/contacts/402088746040/connections\"\n        },\n        \"last_contacted_sales_activity_mode\": null,\n        \"custom_field\": {},\n        \"created_at\": \"2024-08-16T16:21:05Z\",\n        \"updated_at\": \"2024-08-16T16:21:06Z\",\n        \"keyword\": null,\n        \"medium\": null,\n        \"last_contacted_mode\": null,\n        \"recent_note\": null,\n        \"won_deals_count\": 0,\n        \"last_contacted_via_sales_activity\": null,\n        \"completed_sales_sequences\": null,\n        \"active_sales_sequences\": null,\n        \"web_form_ids\": null,\n        \"open_deals_count\": 0,\n        \"last_assigned_at\": null,\n        \"facebook\": null,\n        \"twitter\": \"https://twitter.com/texturadepajari\",\n        \"linkedin\": null,\n        \"is_deleted\": false,\n        \"team_user_ids\": [],\n        \"external_id\": null,\n        \"work_email\": null,\n        \"subscription_status\": 1,\n        \"subscription_types\": \"2;3;4;5;1\",\n        \"unsubscription_reason\": null,\n        \"other_unsubscription_reason\": null,\n        \"customer_fit\": 0,\n        \"record_type_id\": \"403027210951\",\n        \"whatsapp_subscription_status\": 2,\n        \"sms_subscription_status\": 2,\n        \"last_seen_chat\": null,\n        \"first_seen_chat\": null,\n        \"locale\": null,\n        \"total_sessions\": null,\n        \"system_tags\": [],\n        \"first_campaign\": null,\n        \"first_medium\": null,\n        \"first_source\": null,\n        \"last_campaign\": null,\n        \"last_medium\": null,\n        \"last_source\": null,\n        \"latest_campaign\": null,\n        \"latest_medium\": null,\n        \"latest_source\": null,\n        \"mcr_id\": 1824481515645905000,\n        \"description\": null,\n        \"phone_numbers\": [],\n        \"tags\": []\n    },\n    \"meta\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:3000/createContact",
@@ -44,7 +107,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\": \"himasn\",\n    \"last_name\": \"Sampleton (sample)\",\n    \"email\": \"texting@gmail.com\",\n    \"mobile_number\": \"1-926-555-9503\"\n}",
+					"raw": "{\n    \"first_name\": \"himasn\",\n    \"last_name\": \"Sampleton (sample)\",\n    \"email\": \"text@gmail.com\",\n    \"mobile_number\": \"1-926-555-9503\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,7 +126,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "response 200 success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"himasn\",\n    \"last_name\": \"Sampleton (sample)\",\n    \"email\": \"text@gmail.com\",\n    \"mobile_number\": \"1-926-555-9503\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/createContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createContact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2502"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9c6-5BV9QGlefwCw9W5SyCZeoZisles\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Aug 2024 16:21:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"contact\": {\n        \"id\": 402088746040,\n        \"first_name\": \"himasn\",\n        \"last_name\": \"Sampleton (sample)\",\n        \"display_name\": \"himasn Sampleton (sample)\",\n        \"avatar\": null,\n        \"job_title\": null,\n        \"city\": null,\n        \"state\": null,\n        \"zipcode\": null,\n        \"country\": null,\n        \"email\": \"text@gmail.com\",\n        \"emails\": [\n            {\n                \"id\": 402062474503,\n                \"value\": \"text@gmail.com\",\n                \"is_primary\": true,\n                \"label\": null,\n                \"_destroy\": false\n            }\n        ],\n        \"time_zone\": null,\n        \"work_number\": null,\n        \"mobile_number\": \"19265559503\",\n        \"address\": null,\n        \"last_seen\": null,\n        \"lead_score\": 0,\n        \"last_contacted\": null,\n        \"open_deals_amount\": null,\n        \"won_deals_amount\": null,\n        \"links\": {\n            \"conversations\": \"/crm/sales/contacts/402088746040/conversations/all?include=email_conversation_recipients%2Ctargetable%2Cphone_number%2Cphone_caller%2Cnote%2Cuser&per_page=3\",\n            \"timeline_feeds\": \"/crm/sales/contacts/402088746040/timeline_feeds\",\n            \"document_associations\": \"/crm/sales/contacts/402088746040/document_associations\",\n            \"notes\": \"/crm/sales/contacts/402088746040/notes?include=creater\",\n            \"tasks\": \"/crm/sales/contacts/402088746040/tasks?include=creater,owner,updater,targetable,users,task_type\",\n            \"appointments\": \"/crm/sales/contacts/402088746040/appointments?include=creater,owner,updater,targetable,appointment_attendees,conference,note\",\n            \"reminders\": \"/crm/sales/contacts/402088746040/reminders?include=creater,owner,updater,targetable\",\n            \"duplicates\": \"/crm/sales/contacts/402088746040/duplicates\",\n            \"connections\": \"/crm/sales/contacts/402088746040/connections\"\n        },\n        \"last_contacted_sales_activity_mode\": null,\n        \"custom_field\": {},\n        \"created_at\": \"2024-08-16T16:21:05Z\",\n        \"updated_at\": \"2024-08-16T16:21:05Z\",\n        \"keyword\": null,\n        \"medium\": null,\n        \"last_contacted_mode\": null,\n        \"recent_note\": null,\n        \"won_deals_count\": 0,\n        \"last_contacted_via_sales_activity\": null,\n        \"completed_sales_sequences\": null,\n        \"active_sales_sequences\": null,\n        \"web_form_ids\": null,\n        \"open_deals_count\": 0,\n        \"last_assigned_at\": null,\n        \"facebook\": null,\n        \"twitter\": null,\n        \"linkedin\": null,\n        \"is_deleted\": false,\n        \"team_user_ids\": [],\n        \"external_id\": null,\n        \"work_email\": null,\n        \"subscription_status\": 1,\n        \"subscription_types\": \"2;3;4;5;1\",\n        \"unsubscription_reason\": null,\n        \"other_unsubscription_reason\": null,\n        \"customer_fit\": 0,\n        \"record_type_id\": \"403027210951\",\n        \"whatsapp_subscription_status\": 2,\n        \"sms_subscription_status\": 2,\n        \"last_seen_chat\": null,\n        \"first_seen_chat\": null,\n        \"locale\": null,\n        \"total_sessions\": null,\n        \"system_tags\": [],\n        \"first_campaign\": null,\n        \"first_medium\": null,\n        \"first_source\": null,\n        \"last_campaign\": null,\n        \"last_medium\": null,\n        \"last_source\": null,\n        \"latest_campaign\": null,\n        \"latest_medium\": null,\n        \"latest_source\": null,\n        \"mcr_id\": 1824481515645905000,\n        \"description\": null,\n        \"phone_numbers\": [],\n        \"tags\": []\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:3000/updateContact",
@@ -91,7 +217,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "response 200 success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"contact_id\": \"402088746040\",\n        \"email\":\"newemail@123.com\",\n        \"mobile_number\":\"12356734455\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateContact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2537"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e9-10fKc4iNalESl9hDS5BF7AEiATo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Aug 2024 16:23:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"contact\": {\n        \"id\": 402088746040,\n        \"first_name\": \"himasn\",\n        \"last_name\": \"Sampleton (sample)\",\n        \"display_name\": \"himasn Sampleton (sample)\",\n        \"avatar\": null,\n        \"job_title\": null,\n        \"city\": null,\n        \"state\": null,\n        \"zipcode\": null,\n        \"country\": null,\n        \"email\": \"newemail@123.com\",\n        \"emails\": [\n            {\n                \"id\": 402062474503,\n                \"value\": \"text@gmail.com\",\n                \"is_primary\": true,\n                \"label\": null,\n                \"_destroy\": false\n            }\n        ],\n        \"time_zone\": null,\n        \"work_number\": null,\n        \"mobile_number\": \"12356734455\",\n        \"address\": null,\n        \"last_seen\": null,\n        \"lead_score\": 0,\n        \"last_contacted\": null,\n        \"open_deals_amount\": null,\n        \"won_deals_amount\": null,\n        \"links\": {\n            \"conversations\": \"/crm/sales/contacts/402088746040/conversations/all?include=email_conversation_recipients%2Ctargetable%2Cphone_number%2Cphone_caller%2Cnote%2Cuser&per_page=3\",\n            \"timeline_feeds\": \"/crm/sales/contacts/402088746040/timeline_feeds\",\n            \"document_associations\": \"/crm/sales/contacts/402088746040/document_associations\",\n            \"notes\": \"/crm/sales/contacts/402088746040/notes?include=creater\",\n            \"tasks\": \"/crm/sales/contacts/402088746040/tasks?include=creater,owner,updater,targetable,users,task_type\",\n            \"appointments\": \"/crm/sales/contacts/402088746040/appointments?include=creater,owner,updater,targetable,appointment_attendees,conference,note\",\n            \"reminders\": \"/crm/sales/contacts/402088746040/reminders?include=creater,owner,updater,targetable\",\n            \"duplicates\": \"/crm/sales/contacts/402088746040/duplicates\",\n            \"connections\": \"/crm/sales/contacts/402088746040/connections\"\n        },\n        \"last_contacted_sales_activity_mode\": null,\n        \"custom_field\": {},\n        \"created_at\": \"2024-08-16T16:21:05Z\",\n        \"updated_at\": \"2024-08-16T16:23:24Z\",\n        \"keyword\": null,\n        \"medium\": null,\n        \"last_contacted_mode\": null,\n        \"recent_note\": null,\n        \"won_deals_count\": 0,\n        \"last_contacted_via_sales_activity\": null,\n        \"completed_sales_sequences\": null,\n        \"active_sales_sequences\": null,\n        \"web_form_ids\": null,\n        \"open_deals_count\": 0,\n        \"last_assigned_at\": null,\n        \"facebook\": null,\n        \"twitter\": \"https://twitter.com/texturadepajari\",\n        \"linkedin\": null,\n        \"is_deleted\": false,\n        \"team_user_ids\": [],\n        \"external_id\": null,\n        \"work_email\": null,\n        \"subscription_status\": 1,\n        \"subscription_types\": \"2;3;4;5;1\",\n        \"unsubscription_reason\": null,\n        \"other_unsubscription_reason\": null,\n        \"customer_fit\": 0,\n        \"record_type_id\": \"403027210951\",\n        \"whatsapp_subscription_status\": 2,\n        \"sms_subscription_status\": 2,\n        \"last_seen_chat\": null,\n        \"first_seen_chat\": null,\n        \"locale\": null,\n        \"total_sessions\": null,\n        \"system_tags\": [],\n        \"first_campaign\": null,\n        \"first_medium\": null,\n        \"first_source\": null,\n        \"last_campaign\": null,\n        \"last_medium\": null,\n        \"last_source\": null,\n        \"latest_campaign\": null,\n        \"latest_medium\": null,\n        \"latest_source\": null,\n        \"mcr_id\": 1824481515645905000,\n        \"description\": null,\n        \"phone_numbers\": [],\n        \"tags\": []\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "http://localhost:3000/deleteContact",
@@ -100,7 +289,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"contact_id\": \"402088157004\"\n}",
+					"raw": "{\n        \"contact_id\": \"402088744429\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -119,7 +308,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "response 200 success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"contact_id\": \"402088746040\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/deleteContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteContact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4-X/5TO4MPCKAyY0ipFgr6/IraRNs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Aug 2024 16:23:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
 		}
 	]
 }
