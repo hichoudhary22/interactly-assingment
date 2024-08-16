@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "996e721b-0285-4b4c-b992-62da78dcae87",
+		"name": "project freshworks CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37715377"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/getContact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"contact_id\": \"402086090553\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/getContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/createContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"himasn\",\n    \"last_name\": \"Sampleton (sample)\",\n    \"email\": \"texting@gmail.com\",\n    \"mobile_number\": \"1-926-555-9503\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/createContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/updateContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"contact_id\": \"402088157004\",\n        \"email\":\"newemail@123.com\",\n        \"mobile_number\":\"123567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updateContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/deleteContact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"contact_id\": \"402088157004\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/deleteContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteContact"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
